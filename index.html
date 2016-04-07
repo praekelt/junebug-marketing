@@ -7,15 +7,18 @@
     <title>Junebug</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <meta name="theme-color" content="#99de4e" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="js/hammer.js"></script>
 </head>
 
 <body>
     <section class="container bg-gradient section-0">
-        <svg class="junebug-logo wrapper">
-            <image xlink:href="img/junebug-logo.svg" src="img/junebug-logo.png" />
-        </svg>
+        <div class="junebug-logo wrapper">
+            <img src="img/junebug-logo.svg" onerror="this.src='img/junebug-logo.png'"/>
+        </div>
         <div class="junebug-title wrapper">
             <h3>Local mobile network integration <b>made easy</b></h3>
         </div>
@@ -48,9 +51,9 @@
 
             <div class="carousel-slide wrapper-nopadding active limegreen">
 
-                <svg class="carousel-slide-icon grid_3">
-                    <image xlink:href="img/feature-01.svg" src="img/feature-01.png" />
-                </svg>
+                <div class="carousel-slide-icon grid_3">
+                    <img src="img/feature-01.svg" onerror="this.src='img/feature-01.png'"/>
+                </div>
                 <div class="wrapper grid_9">
                     <div class="carousel-slide-content">
                         <h3><b>Simpler Integration</b></h3>
@@ -67,9 +70,9 @@
 
             <div class="carousel-slide wrapper-nopadding blue">
 
-                <svg class="carousel-slide-icon grid_3">
-                    <image xlink:href="img/feature-02.svg" src="img/feature-02.png" />
-                </svg>
+                <div class="carousel-slide-icon grid_3">
+                    <img src="img/feature-02.svg" onerror="this.src='img/feature-02.png'"/>
+                </div>
                 <div class="wrapper grid_9">
                     <div class="carousel-slide-content">
                         <h3><b>Local Installation</b></h3>
@@ -88,9 +91,9 @@
 
             <div class="carousel-slide wrapper-nopadding red">
 
-                <svg class="carousel-slide-icon grid_3">
-                    <image xlink:href="img/feature-03.svg" src="img/feature-03.png" />
-                </svg>
+                <div class="carousel-slide-icon grid_3">
+                    <img src="img/feature-03.svg" onerror="this.src='img/feature-03.png'"/>
+                </div>
 
                 <div class="wrapper grid_9">
                     <div class="carousel-slide-content">
@@ -197,16 +200,17 @@
             </div>
 
             <div class="footer">
-                <div class="footer-copyright">
-                    &copy; 2016 Praekelt Foundation
-                </div>
-
                 <div class="footer-logo-junebug">
                     <img src="img/junebug-footer-logo.jpg"/>
                 </div>
                 <div class="footer-logo-git">
                     <img src="img/git-logo.jpg"/>
                 </div>
+                <div class="footer-copyright">
+                    &copy; 2016 Praekelt Foundation
+                </div>
+
+
             </div>
 
         </div>

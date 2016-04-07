@@ -10,26 +10,43 @@ var state = 0;
 /**
  * DOM Element Bindings
  */
+var carousel = document.getElementsByClassName('carousel')[0];
 var slides = document.getElementsByClassName('carousel-slide');
 var breadcrumbs = document.getElementsByClassName('carousel-breadcrumbs')[0].children;
 
 var leftHotzone = document.getElementsByClassName('carousel-hotzone-left')[0];
 var rightHotzone = document.getElementsByClassName('carousel-hotzone-right')[0];
 
-
 /**
- * UI Event Bindings
+ * Swipe events
  */
 
-leftHotzone.addEventListener('touchstart', function(){
+var hammertime = new Hammer(carousel);
+
+hammertime.on('swipeleft', function(ev) {
+    increaseState();
+    resetAutoToggle();
+});
+
+hammertime.on('swiperight', function(ev) {
     decreaseState();
     resetAutoToggle();
 });
 
-rightHotzone.addEventListener('touchstart', function(){
-    increaseState();
-    resetAutoToggle();
-});
+/**
+ * UI Event Bindings
+ * DEPRECATED in favour of swipe events
+ */
+
+// leftHotzone.addEventListener('touchstart', function(){
+//     decreaseState();
+//     resetAutoToggle();
+// });
+//
+// rightHotzone.addEventListener('touchstart', function(){
+//     increaseState();
+//     resetAutoToggle();
+// });
 
 /**
  * Error checking
