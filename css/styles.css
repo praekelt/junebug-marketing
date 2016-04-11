@@ -177,6 +177,7 @@ a {
     margin-top: 50px;
     width: 49%;
     display: inline-block;
+    float: right;
 }
 
 [class*='contrib-logo-'] {
